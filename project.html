@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>โครงการภายใต้นามพรรค</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Same fonts as index: Prompt for headings, Sarabun for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Sarabun', system-ui, -apple-system, 'Segoe UI', Roboto, Arial; background:#f8f9fa; }
+        h1,h2,h3,h4,h5,h6,header { font-family: 'Prompt', 'Sarabun', system-ui, -apple-system, 'Segoe UI', Roboto, Arial; }
+        .project-card { border-left: 6px solid #0d6efd; margin-bottom:1.25rem; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+        .project-meta { font-size:0.95rem; color:#6c757d; }
+        .cta-btn { min-width:150px; }
+        .tag { font-size:0.85rem; padding:0.15rem 0.5rem; border-radius:0.35rem; background:#e9ecef; color:#495057; }
+        /* Navbar fallback / visibility tweaks */
+        .navbar { background-color: #ffffff !important; border-bottom: 1px solid #e9ecef; }
+        .nav-link.active { color: #0d6efd !important; font-weight: 600; }
+        .navbar-brand { font-weight: 700; }
+    </style>
+</head>
+<body>
+
+<!-- Top navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project.html">Project</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container py-5">
+    <header class="mb-4 text-center">
+        <h1 class="mb-2">โครงการเชิงสังคมและพัฒนา (ในนามพรรค)</h1>
+        <p class="lead">เราจะผลักดันโครงการเชิงปฏิบัติที่ช่วยคนตัวเล็ก ชุมชน และเยาวชน โดยใช้ทรัพยากรของพรรคร่วมกับภาคี เพื่อให้เกิดผลจริงในพื้นที่</p>
+        <p class="project-meta">ด้านล่างคือโครงการหลักที่เราจะดำเนินการ พร้อมคำอธิบาย วัตถุประสงค์ กลุ่มเป้าหมาย วิธีดำเนินการ และวิธีเข้าร่วม</p>
+    </header>
+
+    <!-- Project list -->
+    <div class="row">
+        <div class="col-12">
+
+            <!-- วัดยิ้ม -->
+            <div class="card project-card p-3 mb-3">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="card-title">วัดยิ้ม — คืนพื้นที่ให้วัด</h3>
+                        <span class="tag">สวัสดิการชุมชน</span>
+                    </div>
+                    <p class="card-text">วัตถุประสงค์: ช่วยประสานงานให้วัดที่ตกหล่นออกจากระบบได้รับการขึ้นทะเบียนและการสนับสนุนที่เหมาะสม ทั้งด้านกฎหมาย การบริหารจัดการ และการเชื่อมต่อกับภาครัฐ/กองทุนที่เกี่ยวข้อง</p>
+                    <ul>
+                        <li>กลุ่มเป้าหมาย: วัดขนาดเล็ก วัดในชนบท และวัดที่ถูกระงับสิทธิการรับการช่วยเหลือ</li>
+                        <li>การดำเนินงาน: ทีมภาคสนามประสานงานสำรวจปัญหา ช่วยกรอกแบบฟอร์มขึ้นทะเบียน จัดอบรมการจัดการงบประมาณ และเชื่อมต่อแหล่งทุน</li>
+                        <li>ผลลัพธ์ที่คาดหวัง: วัดเข้าถึงสิทธิการสนับสนุน เพิ่มบทบาทชุมชน และพื้นที่ทางสังคมที่ปลอดภัย</li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <!-- ปลูกบ้านม้ง -->
+            <div class="card project-card p-3 mb-3">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="card-title">ปลูกบ้านม้ง + สนับสนุนชุมชนชาติพันธุ์</h3>
+                        <span class="tag">ชุมชนท้องถิ่น</span>
+                    </div>
+                    <p class="card-text">วัตถุประสงค์: เริ่มจากชาวม้งเป็นโครงการนำร่อง เพื่อช่วยการครอบครองที่อยู่อาศัยที่มั่นคง พร้อมการสนับสนุนด้าน Website และระบบข้อมูลสำหรับกิจกรรมชุมชน เช่น ฌาปนกิจ และบริการสาธารณะ</p>
+                    <ul>
+                        <li>กลุ่มเป้าหมาย: ชุมชนชาติพันธุ์ที่ต้องการที่อยู่อาศัยและเครื่องมือสื่อสาร</li>
+                        <li>การดำเนินงาน: สำรวจความต้องการด้านที่อยู่อาศัย ออกแบบบ้านร่วมกับชุมชน ให้วัสดุก่อสร้างพื้นฐาน และจัดทีมพัฒนา Website/ระบบบริหารงานฌาปนกิจ/คลังข้อมูลชุมชน</li>
+                        <li>ระยะเวลา: โครงการนำร่อง 6–12 เดือน ต่อด้วยขยายผล</li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <!-- เข้า รร + มหาวิทยาลัย -->
+            <div class="card project-card p-3 mb-3">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="card-title">เข้า รร./มหาวิทยาลัย: Technology Club, สอน Coding + AI + ขอทุน</h3>
+                        <span class="tag">การศึกษา</span>
+                    </div>
+                    <p class="card-text">วัตถุประสงค์: สร้างโอกาสให้เยาวชนเข้าถึงทักษะเทคโนโลยี สร้างเส้นทางสู่อาชีพ และเตรียมการฝึกงาน รวมทั้งช่วยเขียนคำขอทุนโครงการ (grant writing)</p>
+                    <ul>
+                        <li>กิจกรรมหลัก: ตั้ง Technology Club ในโรงเรียน/มหาวิทยาลัย สอน Coding, AI เบื้องต้น-กลาง, การเขียนโปรเจคขอทุน, และการเตรียม portfolio</li>
+                        <li>ผลลัพธ์: ผู้เรียนได้ทักษะพื้นฐาน มีโอกาสฝึกงาน และเชื่อมต่อกับนายจ้างในภาคอุตสาหกรรม</li>
+                        <li>วิธีร่วม: เป็นวิทยากร อุปกรณ์/คอมพิวเตอร์ หรือสนับสนุนทุน</li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <!-- นำระบบ Software Open source และ freeware -->
+            <div class="card project-card p-3 mb-3">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="card-title">แจกซอฟต์แวร์ Open Source & Freeware ให้คนตัวเล็กใช้งาน</h3>
+                        <span class="tag">เทคโนโลยีเพื่อสังคม</span>
+                    </div>
+                    <p class="card-text">วัตถุประสงค์: คัดเลือกและเผยแพร่ซอฟต์แวร์โอเพนซอร์สและฟรีแวร์ที่เป็นประโยชน์ พร้อมคู่มือภาษาไทยและการอบรมใช้งาน — ตัวอย่างซอฟต์แวร์ที่สนับสนุน เช่น ระบบบัญชีพื้นฐาน, CMS, ระบบบริหารจัดการกองทุนชุมชน รวมถึงระบบขายหน้าร้าน (POS) สำหรับร้านค้าขนาดเล็ก และการสอนใช้แพลตฟอร์มออนไลน์เพื่อหางาน เช่น Fastwork</p>
+                    <ul>
+                        <li>การดำเนินงาน: สร้าง repository/เว็บแหล่งดาวน์โหลด คู่มือใช้งานพร้อมวิดีโอสั้น และทีม support เบื้องต้น</li>
+                        <li>ตัวอย่างเพิ่มเติม: สอนการติดตั้งและใช้งาน POS สำหรับร้านค้าท้องถิ่น และแนะแนวการใช้แพลตฟอร์มออนไลน์ (เช่น Fastwork) ในการหางานหรือรับงานฟรีแลนซ์</li>
+                        <li>ผลลัพธ์: ลดต้นทุนการบริหารสำหรับชุมชนและธุรกิจเล็ก และเพิ่มช่องทางหารายได้ให้คนตัวเล็ก</li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <!-- ระบบให้ประชาชนมีส่วนร่วม -->
+            <div class="card project-card p-3 mb-3">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="card-title">ระบบประชาพิจารณ์และลงคะแนน (Vote & Feedback)</h3>
+                        <span class="tag">ประชาธิปไตยเชิงมีส่วนร่วม</span>
+                    </div>
+                    <p class="card-text">วัตถุประสงค์: พัฒนาระบบออนไลน์ที่ให้ประชาชนเสนอความคิดเห็น โหวตนโยบายย่อย และติดตามผลการนำเสนอความคิดเห็นไปใช้ (transparent flow)</p>
+                    <ul>
+                        <li>คุณสมบัติ: ลงชื่อ/ยืนยันตัวตนขั้นพื้นฐาน, โหวตแบบหลายตัวเลือก, แสดงความคิดเห็น, และรายงานผลแบบสาธารณะ</li>
+                        <li>ความปลอดภัย: ใช้ open-source stack และแนวทางรักษาความเป็นส่วนตัว (privacy by design)</li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <!-- ระบบรวมฐานเสียงพรรค -->
+            <div class="card project-card p-3 mb-3">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="card-title">ระบบรวมฐานเสียงพรรค + ติดตามปัญหาในพื้นที่</h3>
+                        <span class="tag">ข้อมูลเชิงพื้นที่</span>
+                    </div>
+                    <p class="card-text">วัตถุประสงค์: รวบรวมข้อมูลฐานเสียงและประเด็นปัญหาในแต่ละพื้นที่ เพื่อให้ทีมงานสามารถติดตาม แก้ไข และประเมินผลเชิงพื้นที่ได้อย่างเป็นระบบ</p>
+                    <ul>
+                        <li>ฟีเจอร์: แผนที่เชิงพื้นที่, รายงานปัญหา (issue tracking), dashboard แสดงดัชนีความพึงพอใจ</li>
+                        <li>ประโยชน์: ช่วยตั้งค่าลำดับความสำคัญของการแก้ปัญหาและวัดผลการดำเนินงาน</li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <!-- camp free programmer -->
+            <div class="card project-card p-3 mb-3">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="card-title">Camp ฟรี: ฝึกเป็น Programmer + หางาน</h3>
+                        <span class="tag">ทักษะแรงงาน</span>
+                    </div>
+                    <p class="card-text">วัตถุประสงค์: จัดค่ายฝึกงานเชิงปฏิบัติ (intensive bootcamp) ที่สอน programming, problem solving และเชื่อมต่อกับตลาดงาน/ฝึกงานจริง</p>
+                    <ul>
+                        <li>คอร์สบังคับเบื้องต้น: ก่อนเข้าร่วมค่ายทุกคนต้องผ่านหลักสูตร "Critical Thinking + นโยบายพรรค" เพื่อให้มีพื้นฐานการคิดเชิงวิพากษ์และเข้าใจแนวนโยบายของพรรคก่อนเริ่มการฝึกทักษะเชิงเทคนิก</li>
+                        <li>รูปแบบ: ค่าย 4–12 สัปดาห์, มี mentorship, portfolio review, mock interviews และการสอนทักษะการหางาน (รวมถึงการใช้แพลตฟอร์มออนไลน์)</li>
+                        <li>ผลลัพธ์: ผู้จบค่ายมีโอกาสสมัครงานหรือฝึกงาน พร้อมมีผลงานจริงใน portfolio</li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <!-- camp problem solving -->
+            <div class="card project-card p-3 mb-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h3 class="card-title">Camp Problem Solving + Frameworks สำหรับนำไปใช้</h3>
+                        <span class="tag">ทักษะเชิงปฏิบัติ</span>
+                    </div>
+                    <p class="card-text">วัตถุประสงค์: สอนวิธีคิดเชิงปัญหา (problem framing), การออกแบบ solution framework ที่สามารถนำไปใช้จริงในชุมชนและหน่วยงานรัฐ/เอกชน</p>
+                    <ul>
+                        <li>คอร์สบังคับเบื้องต้น: ผู้เข้าร่วมต้องผ่านหลักสูตร "Critical Thinking + นโยบายพรรค" ก่อน เพื่อให้การออกแบบโซลูชันสอดคล้องกับค่านิยมและแนวนโยบายของพรรค</li>
+                        <li>เนื้อหา: การวิเคราะห์ปัญหา, ออกแบบโครงการ, วัดผล, การใช้เครื่องมือและกรอบความคิด (lean, design thinking, systems mapping)</li>
+                        <li>ผลลัพธ์: ผู้เข้าร่วมสามารถออกแบบโครงการทดลอง (pilot) และขยายผลในพื้นที่</li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="mt-5 text-center text-muted">
+        <p>ต้องการสอบถามเพิ่มเติมหรือร่วมมือกับเรา กรุณาติดต่อ: <a href="mailto:info@example.org">info@example.org</a></p>
+        <p class="small">หมายเหตุ: อีเมลในหน้านี้เป็นตัวอย่าง หากต้องการให้เชื่อมต่อช่องทางเฉพาะของพรรค กรุณาส่งข้อมูลที่ต้องการให้ใส่เข้ามา</p>
+    </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    (function(){
+        const current = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+        const items = document.querySelectorAll('.navbar .nav-link, .navbar .navbar-brand');
+        items.forEach(el=>{
+            const href = el.getAttribute('href') || '';
+            const hrefName = href.split('/').pop().toLowerCase();
+            if(hrefName === current || (hrefName === '' && current === 'index.html')){
+                el.classList.add('active');
+                el.setAttribute('aria-current','page');
+            }
+        });
+    })();
+</script>
+</body>
+</html>

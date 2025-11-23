@@ -14,6 +14,10 @@
             font-family: 'Sarabun', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
             font-weight: 400;
         }
+        /* Navbar fallback / visibility tweaks */
+        .navbar { background-color: #ffffff !important; border-bottom: 1px solid #e9ecef; }
+        .nav-link.active { color: #0d6efd !important; font-weight: 600; }
+        .navbar-brand { font-weight: 700; }
         .layer-card {
             border-left: 5px solid;
             margin-bottom: 20px;
@@ -47,7 +51,28 @@
 </head>
 <body>
 
+
 <div class="container py-5">
+    
+<!-- Top navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project.html">Project</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
     <h1 class="text-center mb-5 text-primary">📊 Layered Diagram: จุดยืนและนโยบายพรรคไทยสร้างไทย</h1>
 
     <div class="row justify-content-center">
@@ -138,5 +163,19 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    (function(){
+        const current = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+        const items = document.querySelectorAll('.navbar .nav-link, .navbar .navbar-brand');
+        items.forEach(el=>{
+            const href = el.getAttribute('href') || '';
+            const hrefName = href.split('/').pop().toLowerCase();
+            if(hrefName === current || (hrefName === '' && current === 'index.html')){
+                el.classList.add('active');
+                el.setAttribute('aria-current','page');
+            }
+        });
+    })();
+</script>
 </body>
 </html>
